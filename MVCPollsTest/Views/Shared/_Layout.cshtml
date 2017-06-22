@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MVCPollsTest</title>
+    <title>@ViewData["Title"] - LocalPolls</title>
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -34,7 +34,9 @@
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <!--1. We are using the Home controller for the Home and About pages, and a unique
+                        issues controller for the Issues page.-->
+                    <li><a asp-area="" asp-controller="Issues" asp-action="Issues">Issues</a></li>
                 </ul>
             </div>
         </div>
